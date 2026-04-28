@@ -1,0 +1,7 @@
+requests
+openpyxl
+gspread
+oauth2client
+flask
+fastapi
+uvicorn

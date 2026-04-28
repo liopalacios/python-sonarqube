@@ -11,6 +11,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
 SONARQUBE_URL_ISSUES = "http://172.23.12.34:9000/api/issues/search"
+
+
 SONARQUBE_URL_METRICS = "http://172.23.12.34:9000/api/measures/component"
 # Configuración de SonarQube
 SONARQUBE_URL = "http://172.23.12.34:9000/api/issues/search"
@@ -34,6 +36,7 @@ SONARQUBE_PARAMS_RULES = {
     "facets": "rules",
     "statuses": "OPEN"
 }
+
 SONARQUBE_HEADERS = {"Authorization": "Bearer TU_TOKEN"}
 
 # Configuración de Google Sheets
@@ -274,7 +277,7 @@ def procesar_componentes():
         "mr-api-sp-maestros", "mr-api-sp-pasarela-pago", "mr-api-sp-portal", "mr-api-sp-proceso-carga",
         "mr-api-sp-sunat", "mr-api-sp-usuarios", "mr-api-neg-evaluacion-tramite", "mr-api-neg-resolucion-tramite",
         "mr-api-sp-evaluacion-tramite", "mr-api-sp-resolucion-tramite", "mr-api-sp-solicitud-norel",
-        "mr-api-sp-transmisiones", "mr-ui"
+        "mr-api-sp-transmisiones","mr-api-neg-portal-reporte","mr-api-sp-portal-reporte", "mr-ui"
     ]
 
     todos_los_datos = []
