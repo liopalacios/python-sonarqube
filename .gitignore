@@ -1,0 +1,40 @@
+# Entorno virtual
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Archivos de reportes (los que ya tienes con fechas)
+reporte_*.xlsx
+~$*.xlsx
+_$reporte_*.xlsx
+
+# Archivos específicos de tu proyecto
+*.xlsx
+!requerimiento.txt  # Este sí lo quieres incluir
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de caché de pytest
+.pytest_cache/
+.coverage
+htmlcov/
